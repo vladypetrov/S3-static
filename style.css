@@ -1,24 +1,48 @@
-
+body {
+    background-color: #080d14 !important; 
+    color: #17a88b !important;
+  }
 
 .fab {
-    color: #333; /* Change the color as desired */
-    margin: 0 10px; /* Adjust spacing as needed */
-}
-
-.profile-img {  
-    width: 300px; /* Adjust size as needed */  
-    height: 300px;  
-    border-radius: 50%;  
-    object-fit: cover;  
-    margin-top: 20px; /* Adjust spacing as needed */
-}
-
-.skill-level {
+    color: #17a88b;
+    margin: 0 10px;
+    transition: color 0.2s ease; /* Add a transition for the hover effect */
+  }
+  
+  .fab:hover {
+    color: #1d99f3; /* Change color on hover */
+  }
+  
+  .profile-img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    border: 2px solid #17a88b; /* Add this line */
+    object-fit: cover;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+  }
+  
+  .skill-level {
     font-size: smaller;
     font-style: italic;
-    color: #6c757d; 
-}
+    color: #17a88b;
+    /* Consider adding a progress bar or other visual representation here */
+  }
+  
+  .list-unstyled li {
+    margin-bottom: 15px; /* Add spacing between list items */
+    border-bottom: 1px solid #13836e; /* Add a subtle divider */
+  }
+  
+  .list-unstyled li:last-child {
+    border-bottom: 1px solid #13836e; /* Remove the divider for the last item */
+  }
 
-.list-unstyled li {
-    margin-top: 10px; /* Adjust the value as needed */
-}
+  .list-unstyled-none li:last-child {
+    border-bottom: none; /* Remove the divider for the last item */
+  }
+
+  .list-unstyled-none li {
+    border-bottom: none; /* Remove the divider for the last item */
+  }
